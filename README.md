@@ -5,7 +5,7 @@ netconvert --node-files=exa.nod.xml --edge-files=exa.edg.xml --connection-files=
 
 sumo-gui -c exa.sumocfg
 
-sumo -c myConfig.sumocfg --fcd-output sumoTrace.xml
+sumo -c exa.sumocfg --fcd-output sumoTrace.xml
 
 python traceExporter.py --fcd-input sumoTrace.xml --ns2mobility-output ns2mobility.tcl
 ```
@@ -13,4 +13,4 @@ python traceExporter.py --fcd-input sumoTrace.xml --ns2mobility-output ns2mobili
 
 recording by https://github.com/phw/peek
 
-https://sumo.dlr.de/docs/Tutorials/Trace_File_Generation.html
+reference: https://sumo.dlr.de/docs/Tutorials/Trace_File_Generation.html
