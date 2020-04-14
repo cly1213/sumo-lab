@@ -1,0 +1,8 @@
+<routes>
+    <vType accel="1.0" decel="5.0" id="ACar" length="2.0" maxSpeed="10.0" sigma="1.0" />
+    <vType accel="0.8" decel="5.0" id="BCar" length="2.0" maxSpeed="15.0" sigma="1.0" />
+    <route id="route_ns" edges="4fi 4si 3o"/>
+    <route id="route_we" edges="1fi 1si 2o"/>
+    <flow depart="1" id="flow_n_s" route="route_ns" type="ACar" begin="0" end="3600" probability="0.1" />
+    <flow depart="1" id="flow_w_e" route="route_we" type="BCar" begin="0" end="3600" probability="0.3" />
+</routes>
